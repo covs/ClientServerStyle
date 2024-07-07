@@ -52,9 +52,9 @@ public class Server {
                         String montoStr = parts[2];
 
                         boolean result = procesarRemesa(cuenta, montoStr);
-                        out.println(result ? "true" : "false");
+                        out.println(result ? "Transaccion correcta" : "Cuenta no existe, intente nuevamente.");
                     } else if ("bye".equalsIgnoreCase(inputLine)) {
-                        out.println("bye");
+                        out.println("Comunicacion finalizada.");
                         break;
                     } else {
                         out.println("unrecognized message");
